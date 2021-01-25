@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dentalCremer": "node utils/scraper.js",
+    "dentalSpeed": "node utils/scraperDentalSpeed.js",
+    "popular": "node dentalSpeed/popular.js",
+    "group": "node dentalSpeed/group.js",
+    "dev:debug": "node --inspect utils/scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0"
+  }
+}
